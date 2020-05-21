@@ -4,8 +4,10 @@ import {createLoadMoreButtonTemplate} from './components/load-more-button.js';
 import {createTaskEditTemplate} from './components/task-edit.js';
 import {createTaskTemplate} from './components/task.js';
 import {createSiteMenuTemplate} from './components/site-menu.js';
+
 import {generateTasks} from './mock/task.js';
 import {generateFilters} from './mock/filter.js';
+import {render, RenderPosition} from './utils.js';
 
 const TASK_COUNT = 22;
 const SHOWING_TASKS_COUNT_ON_START = 8;
