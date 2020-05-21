@@ -1,9 +1,9 @@
-import {Colors} from '../const.js';
+import {COLORS} from '../const.js';
 
 const DescriptionItems = [
   `Изучить теорию`,
-  `Сделать домашку`,
-  `Пройти интенсив на соточку`,
+  `Сделать практику`,
+  `Пройти интенсив`,
 ];
 
 const DefaultRepeatingDays = {
@@ -64,7 +64,7 @@ const generateTask = () => {
     dueDate,
     repeatingDays: dueDate ? DefaultRepeatingDays : generateRepeatingDays(),
     tags: new Set(generateTags(Tags)),
-    color: getRandomArrayItem(Colors),
+    color: getRandomArrayItem(COLORS),
     isFavorite: Math.random() > 0.5,
     isArchive: Math.random() > 0.5,
   };
