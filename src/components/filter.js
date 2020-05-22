@@ -1,4 +1,3 @@
-
 import {createElement} from '../utils';
 
 const createFilterMarkup = (filter, isCheked) => {
