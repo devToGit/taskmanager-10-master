@@ -2,6 +2,7 @@ import {createElement} from '../utils';
 
 const createFilterMarkup = (filter, isCheked) => {
   const {name, count} = filter;
+
   return (
     `<input
           type="radio"
@@ -28,7 +29,7 @@ const createFilterTemplate = (filters) => {
 
 export default class Filter {
   constructor(filters) {
-    this.filters = filters;
+    this._filters = filters;
     this._element = null;
   }
 
@@ -37,15 +38,14 @@ export default class Filter {
   }
 
   getElement() {
-    if (!this.element) {
+    if (!this._element) {
       this._element = createElement(this.getTemplate());
     }
 
-    return this.element;
+    return this._element;
   }
 
   removeElement() {
     this._element = null;
   }
-
 }
