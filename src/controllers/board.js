@@ -1,10 +1,10 @@
-import LoadMoreButtonComponent from './components/load-more-button.js';
-import TaskEditComponent from './components/task-edit.js';
-import TaskComponent from './components/task.js';
-import TasksComponent from './components/tasks.js';
-import NoTasksComponent from './components/no-tasks.js';
-import SortComponent from './components/sort.js';
-import {render, remove, replace, RenderPosition} from './utils/render.js';
+import LoadMoreButtonComponent from '../components/load-more-button.js';
+import TaskEditComponent from '../components/task-edit.js';
+import TaskComponent from '../components/task.js';
+import TasksComponent from '../components/tasks.js';
+import NoTasksComponent from '../components/no-tasks.js';
+import SortComponent from '../components/sort.js';
+import {render, remove, replace, RenderPosition} from '../utils/render.js';
 
 const SHOWING_TASKS_COUNT_ON_START = 8;
 const SHOWING_TASKS_COUNT_BY_BUTTON = 8;
